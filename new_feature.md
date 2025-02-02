@@ -1,0 +1,7 @@
+There was a problem with the background not showing up so I asked ChatGPT to fix it, and it somehow put the container showing the todo list inside a navigation bar I just recently asked it to add. 
+
+Not only that, when I first asked it to create the navigation bar, for some reason it got rid of certain functionality from the todo container including the completed, pending, and done sections. 
+
+I could not create a version where the todo list had all its original functionalities while also including a navigation bar, I found this very odd since the navigation bar is not nested into the todo functionality. I think the issue was that ChatGPT was updated files that didn't need to be updated and would just delete certain sections of my code. I think some possible misunderstandings could have arised due to me changing the names of certain files or folders but I did diligently check all of that before going back to ChatGPT to troubleshoot. 
+
+I was able to add a select background feature where the background is actually a video. I also added a background noise selector where users can play ambient sounds. I was able to also add a customizable pomodoro timer. My vision for this project was to create a productivity dashboard where users are able to complete tasks and add functionality that can help users focus on said tasks. 

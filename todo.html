@@ -10,24 +10,28 @@
 
   <!-- Video Background -->
   <video id="video-bg" autoplay loop muted>
-    <source src="gallery/ocean.mp4" type="video/mp4">
+    <source id="video-source" src="gallery/ocean.mp4" type="video/mp4">
   </video>
 
-  <!-- Background Selector -->
-  <div class="background-selector">
-    <button class="bg-btn" data-bg="ocean.mp4">Ocean</button>
-    <button class="bg-btn" data-bg="park.mp4">Park</button>
-    <button class="bg-btn" data-bg="snow.mp4">Snow</button>
-  </div>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <h2>Settings</h2>
 
-  <!-- Ambient Sound Selector -->
-  <div class="ambient-selector">
-    <label for="sound-select">Background Noise:</label>
+    <!-- Background Gallery -->
+    <h3>Backgrounds</h3>
+    <div class="background-gallery">
+      <img src="gallery/ocean.png" class="bg-thumb" data-bg="ocean.mp4" alt="Beach">
+      <img src="gallery/park.png" class="bg-thumb" data-bg="park.mp4" alt="Park">
+      <img src="gallery/snow.png" class="bg-thumb" data-bg="snow.mp4" alt="Snow">
+    </div>
+
+    <!-- Ambient Sound Selector -->
+    <h3>Background Noise</h3>
     <select id="sound-select">
       <option value="">None</option>
       <option value="white-noise.mp3">White Noise</option>
-      <option value="garden-ambiance.mp3">Garden Ambiance</option>
-      <option value="night-ambiance.mp3">Night Ambiance</option>
+      <option value="garden-ambiance.mp3">Rain</option>
+      <option value="night-ambiance.mp3">Ocean Waves</option>
     </select>
     <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.5">
     <button id="toggle-sound">Play</button>
@@ -48,11 +52,6 @@
       <div class="controls">
         <input type="text" id="new-task" placeholder="Add a new task">
         <button id="add-task">Add</button>
-      </div>
-      <div class="filters">
-        <button data-filter="all" class="filter-btn active">All</button>
-        <button data-filter="completed" class="filter-btn">Completed</button>
-        <button data-filter="pending" class="filter-btn">Pending</button>
       </div>
       <ul id="task-list"></ul>
     </div>
@@ -80,6 +79,6 @@
   <script src="js/background.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/draggable.js"></script>
-  <script src="js/ambient-sound.js"></script>  <!-- NEW SCRIPT -->
+  <script src="js/ambient-sound.js"></script>
 </body>
 </html>

@@ -167,3 +167,43 @@ button:hover {
   border: none;
   cursor: pointer;
 }
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  width: 120px;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.navbar h2, .navbar h3 {
+  color: white;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.background-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.bg-thumb {
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.bg-thumb:hover {
+  transform: scale(1.1);
+}
